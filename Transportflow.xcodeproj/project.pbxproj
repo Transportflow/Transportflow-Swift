@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34FD77B337B2F0D23EDD32F5 /* Pods_Transportflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */; };
+		3A6A9CB02516760400F95440 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CAF2516760400F95440 /* Monitor.swift */; };
 		3AB0D4872516175C00B860FA /* TransportflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4862516175C00B860FA /* TransportflowApp.swift */; };
 		3AB0D4892516175C00B860FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4882516175C00B860FA /* ContentView.swift */; };
 		3AB0D48B2516175F00B860FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D48A2516175F00B860FA /* Assets.xcassets */; };
@@ -23,6 +25,11 @@
 		3AB0D4C22516176100B860FA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4C12516176100B860FA /* ComplicationController.swift */; };
 		3AB0D4C42516176200B860FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D4C32516176200B860FA /* Assets.xcassets */; };
 		3AB0D4C72516176200B860FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D4C62516176200B860FA /* Preview Assets.xcassets */; };
+		3AB0D4DF251617C100B860FA /* ProviderSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4DE251617C100B860FA /* ProviderSelection.swift */; };
+		8AD501CA02A55F0727FBCD8D /* Pods_Transportflow_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */; };
+		91ECAE7B35E3C9427B2A6BB7 /* Pods_Transportflow_TransportflowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06304C3317712CD64F56035A /* Pods_Transportflow_TransportflowUITests.framework */; };
+		BDAA0A9F0C74FDAC7B39572D /* Pods_Transportflow_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26452B4C312E62271D44AE4D /* Pods_Transportflow_WatchKit_Extension.framework */; };
+		C64B97A158A6C211AC102DDB /* Pods_TransportflowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CCC5AD19E38FA82CCCA16 /* Pods_TransportflowTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +89,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01AE25FBDB430630ED257B6E /* Pods-Transportflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow.release.xcconfig"; path = "Target Support Files/Pods-Transportflow/Pods-Transportflow.release.xcconfig"; sourceTree = "<group>"; };
+		06304C3317712CD64F56035A /* Pods_Transportflow_TransportflowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_TransportflowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4D0B039A19809AC30FF57E /* Pods-Transportflow-TransportflowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow-TransportflowUITests.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D2A423DC71ED732D607290F /* Pods-Transportflow WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit App/Pods-Transportflow WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		26452B4C312E62271D44AE4D /* Pods_Transportflow_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ECB3AFE6F276DEE4806FEBA /* Pods-TransportflowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportflowTests.debug.xcconfig"; path = "Target Support Files/Pods-TransportflowTests/Pods-TransportflowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EF2B7D7DDB1A43702B440C9 /* Pods-Transportflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow/Pods-Transportflow.debug.xcconfig"; sourceTree = "<group>"; };
+		3A6A9CAF2516760400F95440 /* Monitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
 		3AB0D4832516175C00B860FA /* Transportflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transportflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB0D4862516175C00B860FA /* TransportflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportflowApp.swift; sourceTree = "<group>"; };
 		3AB0D4882516175C00B860FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +122,15 @@
 		3AB0D4C62516176200B860FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3AB0D4C82516176200B860FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AB0D4C92516176200B860FA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3AB0D4DE251617C100B860FA /* ProviderSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderSelection.swift; sourceTree = "<group>"; };
+		48138FF56E5393D6E282CCA0 /* Pods-Transportflow WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		5D6CBA228293F9E2428076FA /* Pods-TransportflowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportflowTests.release.xcconfig"; path = "Target Support Files/Pods-TransportflowTests/Pods-TransportflowTests.release.xcconfig"; sourceTree = "<group>"; };
+		80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883CCC5AD19E38FA82CCCA16 /* Pods_TransportflowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportflowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912A15DCB08C666BFE3A37A3 /* Pods-Transportflow WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit App/Pods-Transportflow WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		98690ADC1760C68015B773B0 /* Pods-Transportflow WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A101EA12CFD17F7403F317 /* Pods-Transportflow-TransportflowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow-TransportflowUITests.release.xcconfig"; path = "Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FD77B337B2F0D23EDD32F5 /* Pods_Transportflow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64B97A158A6C211AC102DDB /* Pods_TransportflowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91ECAE7B35E3C9427B2A6BB7 /* Pods_Transportflow_TransportflowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +162,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAA0A9F0C74FDAC7B39572D /* Pods_Transportflow_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB481700E74C76732F12466E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD501CA02A55F0727FBCD8D /* Pods_Transportflow_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +186,8 @@
 				3AB0D4AC2516175F00B860FA /* Transportflow WatchKit App */,
 				3AB0D4B82516176100B860FA /* Transportflow WatchKit Extension */,
 				3AB0D4842516175C00B860FA /* Products */,
+				95A877280584ACF83DBE9689 /* Pods */,
+				8D866FB0E2285D8AD2685273 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +253,7 @@
 		3AB0D4B82516176100B860FA /* Transportflow WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3AB0D4DD2516179B00B860FA /* Views */,
 				3AB0D4B92516176100B860FA /* TransportflowApp.swift */,
 				3AB0D4BB2516176100B860FA /* ContentView.swift */,
 				3AB0D4BD2516176100B860FA /* NotificationController.swift */,
@@ -236,6 +275,44 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3AB0D4DD2516179B00B860FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AB0D4DE251617C100B860FA /* ProviderSelection.swift */,
+				3A6A9CAF2516760400F95440 /* Monitor.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D866FB0E2285D8AD2685273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */,
+				80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */,
+				26452B4C312E62271D44AE4D /* Pods_Transportflow_WatchKit_Extension.framework */,
+				06304C3317712CD64F56035A /* Pods_Transportflow_TransportflowUITests.framework */,
+				883CCC5AD19E38FA82CCCA16 /* Pods_TransportflowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95A877280584ACF83DBE9689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EF2B7D7DDB1A43702B440C9 /* Pods-Transportflow.debug.xcconfig */,
+				01AE25FBDB430630ED257B6E /* Pods-Transportflow.release.xcconfig */,
+				912A15DCB08C666BFE3A37A3 /* Pods-Transportflow WatchKit App.debug.xcconfig */,
+				1D2A423DC71ED732D607290F /* Pods-Transportflow WatchKit App.release.xcconfig */,
+				98690ADC1760C68015B773B0 /* Pods-Transportflow WatchKit Extension.debug.xcconfig */,
+				48138FF56E5393D6E282CCA0 /* Pods-Transportflow WatchKit Extension.release.xcconfig */,
+				1C4D0B039A19809AC30FF57E /* Pods-Transportflow-TransportflowUITests.debug.xcconfig */,
+				D6A101EA12CFD17F7403F317 /* Pods-Transportflow-TransportflowUITests.release.xcconfig */,
+				2ECB3AFE6F276DEE4806FEBA /* Pods-TransportflowTests.debug.xcconfig */,
+				5D6CBA228293F9E2428076FA /* Pods-TransportflowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,6 +320,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB0D4D42516176200B860FA /* Build configuration list for PBXNativeTarget "Transportflow" */;
 			buildPhases = (
+				FDFB856F86F587581C1EBED8 /* [CP] Check Pods Manifest.lock */,
 				3AB0D47F2516175C00B860FA /* Sources */,
 				3AB0D4802516175C00B860FA /* Frameworks */,
 				3AB0D4812516175C00B860FA /* Resources */,
@@ -262,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB0D4D72516176200B860FA /* Build configuration list for PBXNativeTarget "TransportflowTests" */;
 			buildPhases = (
+				13E9638C6087EF47419F51A8 /* [CP] Check Pods Manifest.lock */,
 				3AB0D4902516175F00B860FA /* Sources */,
 				3AB0D4912516175F00B860FA /* Frameworks */,
 				3AB0D4922516175F00B860FA /* Resources */,
@@ -280,6 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB0D4DA2516176200B860FA /* Build configuration list for PBXNativeTarget "TransportflowUITests" */;
 			buildPhases = (
+				C97AB5FEDCE7459FB0AC061D /* [CP] Check Pods Manifest.lock */,
 				3AB0D49B2516175F00B860FA /* Sources */,
 				3AB0D49C2516175F00B860FA /* Frameworks */,
 				3AB0D49D2516175F00B860FA /* Resources */,
@@ -298,8 +378,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB0D4D02516176200B860FA /* Build configuration list for PBXNativeTarget "Transportflow WatchKit App" */;
 			buildPhases = (
+				AAB6EEB04A56B11871B292F6 /* [CP] Check Pods Manifest.lock */,
 				3AB0D4A62516175F00B860FA /* Resources */,
 				3AB0D4CF2516176200B860FA /* Embed App Extensions */,
+				EB481700E74C76732F12466E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,9 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB0D4CC2516176200B860FA /* Build configuration list for PBXNativeTarget "Transportflow WatchKit Extension" */;
 			buildPhases = (
+				D3F32CBD8F2581F9CD824969 /* [CP] Check Pods Manifest.lock */,
 				3AB0D4B02516176100B860FA /* Sources */,
 				3AB0D4B12516176100B860FA /* Frameworks */,
 				3AB0D4B22516176100B860FA /* Resources */,
+				5319AF2B374FAC50E57DD536 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,6 +505,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13E9638C6087EF47419F51A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransportflowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5319AF2B374FAC50E57DD536 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB6EEB04A56B11871B292F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transportflow WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97AB5FEDCE7459FB0AC061D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transportflow-TransportflowUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F32CBD8F2581F9CD824969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transportflow WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFB856F86F587581C1EBED8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Transportflow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AB0D47F2516175C00B860FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -452,6 +666,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB0D4BE2516176100B860FA /* NotificationController.swift in Sources */,
+				3AB0D4DF251617C100B860FA /* ProviderSelection.swift in Sources */,
+				3A6A9CB02516760400F95440 /* Monitor.swift in Sources */,
 				3AB0D4BC2516176100B860FA /* ContentView.swift in Sources */,
 				3AB0D4C22516176100B860FA /* ComplicationController.swift in Sources */,
 				3AB0D4BA2516176100B860FA /* TransportflowApp.swift in Sources */,
@@ -598,6 +814,7 @@
 		};
 		3AB0D4CD2516176200B860FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98690ADC1760C68015B773B0 /* Pods-Transportflow WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -622,6 +839,7 @@
 		};
 		3AB0D4CE2516176200B860FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48138FF56E5393D6E282CCA0 /* Pods-Transportflow WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -647,6 +865,7 @@
 		};
 		3AB0D4D12516176200B860FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912A15DCB08C666BFE3A37A3 /* Pods-Transportflow WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -667,6 +886,7 @@
 		};
 		3AB0D4D22516176200B860FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D2A423DC71ED732D607290F /* Pods-Transportflow WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -688,6 +908,7 @@
 		};
 		3AB0D4D52516176200B860FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF2B7D7DDB1A43702B440C9 /* Pods-Transportflow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -711,6 +932,7 @@
 		};
 		3AB0D4D62516176200B860FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01AE25FBDB430630ED257B6E /* Pods-Transportflow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -735,6 +957,7 @@
 		};
 		3AB0D4D82516176200B860FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECB3AFE6F276DEE4806FEBA /* Pods-TransportflowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -758,6 +981,7 @@
 		};
 		3AB0D4D92516176200B860FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6CBA228293F9E2428076FA /* Pods-TransportflowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -782,6 +1006,7 @@
 		};
 		3AB0D4DB2516176200B860FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4D0B039A19809AC30FF57E /* Pods-Transportflow-TransportflowUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -804,6 +1029,7 @@
 		};
 		3AB0D4DC2516176200B860FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A101EA12CFD17F7403F317 /* Pods-Transportflow-TransportflowUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

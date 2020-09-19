@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Monitor.swift
 //  Transportflow WatchKit Extension
 //
 //  Created by Adrian Böhme on 19.09.20.
@@ -7,27 +7,26 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Monitor: View {
     @State var provider = UserDefaults.standard.string(forKey: "provider") ?? ""
+    @State var stopSearch = ""
     
     var body: some View {
         VStack {
-            List {
-                Section(footer: Text("🗺 \(provider)")) {
-                    NavigationLink("Monitor", destination: Monitor())
-                    NavigationLink("Region wählen", destination: ProviderSelection())
-                }
-            }
+            TextField("Haltestelle", text: $stopSearch)
+                .padding()
+            
+            Spacer()
         }.onAppear(perform: {
             // Reload active provider from UserDefaults
             provider = UserDefaults.standard.string(forKey: "provider") ?? ""
         })
-        .navigationBarTitle("Transportflow")
+        .navigationTitle("Monitor")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Monitor_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Monitor()
     }
 }
