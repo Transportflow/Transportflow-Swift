@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		34FD77B337B2F0D23EDD32F5 /* Pods_Transportflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */; };
 		3A6A9CB02516760400F95440 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CAF2516760400F95440 /* Monitor.swift */; };
+		3A6A9CB2251692EE00F95440 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CB1251692EE00F95440 /* LocationObserver.swift */; };
 		3AB0D4872516175C00B860FA /* TransportflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4862516175C00B860FA /* TransportflowApp.swift */; };
 		3AB0D4892516175C00B860FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4882516175C00B860FA /* ContentView.swift */; };
 		3AB0D48B2516175F00B860FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D48A2516175F00B860FA /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		2ECB3AFE6F276DEE4806FEBA /* Pods-TransportflowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportflowTests.debug.xcconfig"; path = "Target Support Files/Pods-TransportflowTests/Pods-TransportflowTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF2B7D7DDB1A43702B440C9 /* Pods-Transportflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow/Pods-Transportflow.debug.xcconfig"; sourceTree = "<group>"; };
 		3A6A9CAF2516760400F95440 /* Monitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
+		3A6A9CB1251692EE00F95440 /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
 		3AB0D4832516175C00B860FA /* Transportflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transportflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB0D4862516175C00B860FA /* TransportflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportflowApp.swift; sourceTree = "<group>"; };
 		3AB0D4882516175C00B860FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				3AB0D4C82516176200B860FA /* Info.plist */,
 				3AB0D4C92516176200B860FA /* PushNotificationPayload.apns */,
 				3AB0D4C52516176200B860FA /* Preview Content */,
+				3A6A9CB1251692EE00F95440 /* LocationObserver.swift */,
 			);
 			path = "Transportflow WatchKit Extension";
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 			files = (
 				3AB0D4BE2516176100B860FA /* NotificationController.swift in Sources */,
 				3AB0D4DF251617C100B860FA /* ProviderSelection.swift in Sources */,
+				3A6A9CB2251692EE00F95440 /* LocationObserver.swift in Sources */,
 				3A6A9CB02516760400F95440 /* Monitor.swift in Sources */,
 				3AB0D4BC2516176100B860FA /* ContentView.swift in Sources */,
 				3AB0D4C22516176100B860FA /* ComplicationController.swift in Sources */,
