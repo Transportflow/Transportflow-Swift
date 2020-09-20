@@ -14,8 +14,10 @@ struct ErrorList: View {
         List {
             if error == RequestError.connectionError {
                 Text("Verbindungsfehler")
-            } else if error == RequestError.noStopsError {
+            } else if error == RequestError.noStopsNearbyError {
                 Text("Keine Haltestellen in der Nähe")
+            } else if error == RequestError.noStopsFoundError {
+                Text("Keine Haltestellen gefunden")
             } else if error == RequestError.noDeparturesError {
                 Text("Keine Abfahrten verfügbar")
             } else {

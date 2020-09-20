@@ -15,8 +15,7 @@ struct Stop: View {
     @State var monitor: TransportflowMonitor? = nil
     @State var error: RequestError = RequestError.nil
     
-    let inputFormatter = DateFormatter()
-    let outputFormatter = DateFormatter()
+    
     
     func loadDepartures() {
         
@@ -24,7 +23,6 @@ struct Stop: View {
         getDepartures(stop: stop, provider: provider, success: { monitor in
             self.error = RequestError.nil
             self.monitor = monitor
-            debugPrint(monitor)
             loading = false
         }, failure: { error in
             monitor = nil
@@ -60,10 +58,7 @@ struct Stop: View {
                         }
                         Spacer()
                         
-                        DepartureTime(outputFormatter: outputFormatter, when: inputFormatter.date(from: departure.when + " UTC")).onAppear() {
-                            inputFormatter.dateFormat = "MMM dd, yyyy, hh:mm:ss a z"
-                            outputFormatter.dateFormat = "HH:mm"
-                        }
+                        DepartureTime(when: departure.when)
                     }
                 }
             } else {

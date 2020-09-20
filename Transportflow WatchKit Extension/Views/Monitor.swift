@@ -12,38 +12,49 @@ struct Monitor: View {
     var provider: String
     
     @ObservedObject var locationObserver = LocationObserver()
-    @State var nearbyStops: [TransportflowStop] = []
+    @State var stops: [TransportflowStop] = []
     
     @State var loading = true
     @State var error: RequestError = RequestError.nil
     @State var stopSearch = ""
     
-    @State var updateStops = false
-    
     func loadStops(location: CLLocation) -> Void {
         loading = true
         
-        getNearbyStops(location: locationObserver.location, provider: provider, success: { stops in
-            nearbyStops = stops
-            loading = false
-        }, failure: { error in
-            nearbyStops = []
-            self.error = error
-            loading = false
-        })
+        if stopSearch == "" {
+            getNearbyStops(location: locationObserver.location, provider: provider, success: { stops in
+                self.stops = stops
+                loading = false
+            }, failure: { error in
+                stops = []
+                self.error = error
+                loading = false
+            })
+        } else {
+            getStops(query: stopSearch, provider: provider, success: { stops in
+                self.stops = stops
+                loading = false
+            }, failure: { error in
+                stops = []
+                self.error = error
+                loading = false
+            })
+        }
     }
     
     var body: some View {
         VStack {
-            TextField("Haltestelle", text: $stopSearch)
+            TextField("Haltestelle", text: $stopSearch, onCommit: {
+                loadStops(location: locationObserver.location)
+            })
                 
-            if loading && error == RequestError.nil && nearbyStops.isEmpty {
+            if loading && error == RequestError.nil && stops.isEmpty {
                 Spacer()
                 Text("Loading")
                 Spacer()
             } else {
-                if !nearbyStops.isEmpty {
-                    List(nearbyStops) { stop in
+                if !stops.isEmpty {
+                    List(stops) { stop in
                         NavigationLink(stop.name, destination: Stop(provider: provider, stop: stop))
                     }
                 } else {
@@ -52,16 +63,10 @@ struct Monitor: View {
             }
         }
         .onReceive(locationObserver.objectWillChange) {_ in
-            if updateStops {
-                loadStops(location: locationObserver.location)
-            }
+            loadStops(location: locationObserver.location)
         }
         .onAppear() {
             locationObserver.start()
-            updateStops = true
-        }
-        .onDisappear() {
-            updateStops = false
         }
         .navigationTitle("Monitor")
     }
