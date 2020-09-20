@@ -6,21 +6,36 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct ContentView: View {
-    @State var provider = UserDefaults.standard.string(forKey: "provider") ?? ""
+    @State var providerName = UserDefaults.standard.string(forKey: "provider") ?? ""
+    @State var providers: [TransportflowProvider] = []
     
     var body: some View {
         VStack {
-            List {
-                Section(footer: Text("🗺 \(provider)")) {
-                    NavigationLink("Monitor", destination: Monitor())
-                    NavigationLink("Region wählen", destination: ProviderSelection())
+            Form {
+                Section {
+                    NavigationLink("🚇 Monitor", destination: Monitor(provider: providerName))
+                    Section {
+                        Picker(selection: $providerName, label: Text("🗺 Region wählen"), content: {
+                            ForEach(providers) { provider in
+                                Text(provider.region).tag(provider.region)
+                            }
+                        }).onChange(of: self.providerName, perform: { newValue in
+                            UserDefaults.standard.set(newValue, forKey: "provider")
+                        })
+                    }
                 }
             }
         }.onAppear(perform: {
-            // Reload active provider from UserDefaults
-            provider = UserDefaults.standard.string(forKey: "provider") ?? ""
+            if providers.isEmpty {
+                getProviders(success: { result in
+                    providers = result
+                }, failure: { error in
+                    debugPrint(error)
+                })
+            }
         })
         .navigationBarTitle("Transportflow")
     }
