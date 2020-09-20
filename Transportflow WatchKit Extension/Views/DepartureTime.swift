@@ -10,6 +10,7 @@ import SwiftUI
 struct DepartureTime: View {
     var when: String
     @State var date: Date?
+    @State var clockTime: String = ""
     @State var relativeMinutes: Int = 0
     
     let inputFormatter = DateFormatter()
@@ -19,7 +20,7 @@ struct DepartureTime: View {
         VStack {
             if date != nil {
                 Text(relativeMinutes < 60 ? String(relativeMinutes) + "'" : String(relativeMinutes/60) + "h")
-                Text(outputFormatter.string(from: date!))
+                Text(clockTime)
                     .font(.caption)
                     .italic()
             } else {
@@ -31,11 +32,12 @@ struct DepartureTime: View {
             
             self.date = inputFormatter.date(from: when + " UTC")
             
-            relativeMinutes = Int(date!.timeIntervalSinceNow/60)
+            self.clockTime = outputFormatter.string(from: date!)
+            self.relativeMinutes = Int(date!.timeIntervalSinceNow/60)
             
             // Prettify
-            if (relativeMinutes == -1) {
-                relativeMinutes = 0
+            if (self.relativeMinutes == -1) {
+                self.relativeMinutes = 0
             }
         }
     }

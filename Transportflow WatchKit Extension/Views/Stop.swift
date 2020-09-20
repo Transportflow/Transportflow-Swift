@@ -15,10 +15,7 @@ struct Stop: View {
     @State var monitor: TransportflowMonitor? = nil
     @State var error: RequestError = RequestError.nil
     
-    
-    
     func loadDepartures() {
-        
         loading = true
         getDepartures(stop: stop, provider: provider, success: { monitor in
             self.error = RequestError.nil
@@ -36,7 +33,13 @@ struct Stop: View {
             HStack {
                 Text("\(monitor?.stop.name ?? "")")
                     .font(.headline)
+                    .truncationMode(.middle)
+                    .lineLimit(2)
                 Spacer()
+                Button(action: {loadDepartures()}, label: {Label("", systemImage: "arrow.2.circlepath.circle.fill")})
+                    .buttonStyle(PlainButtonStyle())
+                    .scaleEffect(1.2)
+                    .padding()
             }
             if error == RequestError.nil && loading {
                 Spacer()
@@ -53,6 +56,7 @@ struct Stop: View {
                             }
                             HStack {
                                 Text(departure.direction)
+                                    .lineLimit(1)
                                 Spacer()
                             }
                         }
@@ -68,6 +72,6 @@ struct Stop: View {
         .onAppear() {
             loadDepartures()
         }
-        .navigationTitle("Abfahrten")
+        .navigationTitle("Fahrten")
     }
 }
