@@ -37,6 +37,8 @@
 		3AB0D4C22516176100B860FA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4C12516176100B860FA /* ComplicationController.swift */; };
 		3AB0D4C42516176200B860FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D4C32516176200B860FA /* Assets.xcassets */; };
 		3AB0D4C72516176200B860FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D4C62516176200B860FA /* Preview Assets.xcassets */; };
+		3ABED0032519026C002FC108 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABED0022519026C002FC108 /* Departure.swift */; };
+		3ABED0052519027B002FC108 /* DepartureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABED0042519027B002FC108 /* DepartureDetail.swift */; };
 		8AD501CA02A55F0727FBCD8D /* Pods_Transportflow_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */; };
 		91ECAE7B35E3C9427B2A6BB7 /* Pods_Transportflow_TransportflowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06304C3317712CD64F56035A /* Pods_Transportflow_TransportflowUITests.framework */; };
 		BDAA0A9F0C74FDAC7B39572D /* Pods_Transportflow_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26452B4C312E62271D44AE4D /* Pods_Transportflow_WatchKit_Extension.framework */; };
@@ -145,6 +147,8 @@
 		3AB0D4C62516176200B860FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3AB0D4C82516176200B860FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AB0D4C92516176200B860FA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3ABED0022519026C002FC108 /* Departure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		3ABED0042519027B002FC108 /* DepartureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureDetail.swift; sourceTree = "<group>"; };
 		48138FF56E5393D6E282CCA0 /* Pods-Transportflow WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5D6CBA228293F9E2428076FA /* Pods-TransportflowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportflowTests.release.xcconfig"; path = "Target Support Files/Pods-TransportflowTests/Pods-TransportflowTests.release.xcconfig"; sourceTree = "<group>"; };
 		80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,12 +321,22 @@
 		3AB0D4DD2516179B00B860FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3ABED0012519025C002FC108 /* Departure */,
 				3A6A9CAF2516760400F95440 /* Monitor.swift */,
 				3A3324B9251776900023C866 /* Stop.swift */,
 				3A3324C3251794F00023C866 /* ErrorList.swift */,
 				3A3324C5251795BE0023C866 /* DepartureTime.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3ABED0012519025C002FC108 /* Departure */ = {
+			isa = PBXGroup;
+			children = (
+				3ABED0022519026C002FC108 /* Departure.swift */,
+				3ABED0042519027B002FC108 /* DepartureDetail.swift */,
+			);
+			path = Departure;
 			sourceTree = "<group>";
 		};
 		8D866FB0E2285D8AD2685273 /* Frameworks */ = {
@@ -717,9 +731,11 @@
 				3AB0D4BC2516176100B860FA /* ContentView.swift in Sources */,
 				3A3324C4251794F00023C866 /* ErrorList.swift in Sources */,
 				3A2E15BC2517335E00603BC7 /* TransportflowProvider.swift in Sources */,
+				3ABED0032519026C002FC108 /* Departure.swift in Sources */,
 				3AB0D4C22516176100B860FA /* ComplicationController.swift in Sources */,
 				3A3324C225177F4D0023C866 /* TransportflowProduct.swift in Sources */,
 				3A3324C6251795BE0023C866 /* DepartureTime.swift in Sources */,
+				3ABED0052519027B002FC108 /* DepartureDetail.swift in Sources */,
 				3AB0D4BA2516176100B860FA /* TransportflowApp.swift in Sources */,
 				3AB0D4C02516176100B860FA /* NotificationView.swift in Sources */,
 				3A3324BA251776900023C866 /* Stop.swift in Sources */,

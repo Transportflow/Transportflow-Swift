@@ -19,7 +19,7 @@ struct DepartureTime: View {
     var body: some View {
         VStack {
             if date != nil {
-                Text(relativeMinutes < 60 ? String(relativeMinutes) + "'" : String(relativeMinutes/60) + "h")
+                Text(formatMinutes(relativeMinutes, indicatePositive: false, longSpelling: false))
                 Text(clockTime)
                     .font(.caption)
                     .italic()
@@ -41,4 +41,19 @@ struct DepartureTime: View {
             }
         }
     }
+}
+
+func formatMinutes(_ minutes: Int, indicatePositive: Bool, longSpelling: Bool) -> String {
+    var output: String
+    if longSpelling {
+        output = minutes < 60 ? String(minutes) + " min" : String(minutes/60) + " h"
+    } else {
+        output = minutes < 60 ? String(minutes) + "'" : String(minutes/60) + "h"
+    }
+    
+    if (minutes > -1 && indicatePositive) {
+        output = "+" + output
+    }
+    
+    return output
 }

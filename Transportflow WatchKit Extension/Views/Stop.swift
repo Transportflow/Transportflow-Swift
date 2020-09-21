@@ -47,30 +47,16 @@ struct Stop: View {
                 Spacer()
             } else if (monitor != nil) {
                 List(monitor!.stopovers) { departure in
-                    HStack {
-                        VStack {
-                            HStack {
-                                Text(departure.line.name)
-                                    .fontWeight(.bold)
-                                Spacer()
-                            }
-                            HStack {
-                                Text(departure.direction)
-                                    .lineLimit(1)
-                                Spacer()
-                            }
-                        }
-                        Spacer()
-                        
-                        DepartureTime(when: departure.when)
-                    }
+                    Departure(departure: departure)
                 }
             } else {
                 ErrorList(error: error)
             }
         }
         .onAppear() {
-            loadDepartures()
+            if (monitor == nil) {
+                loadDepartures()
+            }
         }
         .navigationTitle("Fahrten")
     }
