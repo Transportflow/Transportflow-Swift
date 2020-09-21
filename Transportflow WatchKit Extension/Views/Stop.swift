@@ -31,7 +31,7 @@ struct Stop: View {
     var body: some View {
         VStack {
             HStack {
-                Text("\(monitor?.stop.name ?? "")")
+                Text(stop.name)
                     .font(.headline)
                     .truncationMode(.middle)
                     .lineLimit(2)
