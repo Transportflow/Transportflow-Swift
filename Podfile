@@ -24,6 +24,8 @@ target 'Transportflow WatchKit App' do
 
   # Pods for Transportflow WatchKit App
   pod 'Alamofire', '~> 5.2'
+  pod 'SDWebImageSwiftUI'
+  pod 'SDWebImageSVGCoder'
 
 end
 
@@ -33,5 +35,7 @@ target 'Transportflow WatchKit Extension' do
 
   # Pods for Transportflow WatchKit Extension
   pod 'Alamofire', '~> 5.2'
+  pod 'SDWebImageSwiftUI'
+  pod 'SDWebImageSVGCoder'
 
 end

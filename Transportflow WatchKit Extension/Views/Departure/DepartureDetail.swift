@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SDWebImageSVGCoder
+import SDWebImageSwiftUI
 
 struct DepartureDetail: View {
     var departure: TransportflowStopover
@@ -15,6 +17,10 @@ struct DepartureDetail: View {
             Form {
                 VStack {
                     HStack {
+                        WebImage(url: URL(string: departure.line.product.img))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30, alignment: .center)
                         Text(departure.line.name)
                             .font(.largeTitle)
                             .lineLimit(1)
@@ -44,6 +50,8 @@ struct DepartureDetail: View {
                     }
                 }
             }
+        }.onAppear() {
+            SDImageCodersManager.shared.addCoder(SDImageSVGCoder.shared)
         }
     }
 }
