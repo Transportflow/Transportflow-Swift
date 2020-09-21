@@ -2,4 +2,4 @@
 
 # 📱⌚️ Transportflow-Swift
 Swift Apps for Transportflow<br>
-Currently only working on the WatchOS App
+Currently only working on WatchOS
