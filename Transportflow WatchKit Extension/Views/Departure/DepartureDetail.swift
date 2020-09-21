@@ -15,6 +15,13 @@ struct DepartureDetail: View {
     var body: some View {
         VStack {
             Form {
+                if (departure.cancelled ?? false) {
+                    Section {
+                        Text("Fällt aus")
+                            .bold()
+                    }
+                }
+                
                 VStack {
                     HStack {
                         WebImage(url: URL(string: departure.line.product.img))
@@ -22,7 +29,7 @@ struct DepartureDetail: View {
                             .scaledToFit()
                             .frame(width: 30, height: 30, alignment: .center)
                         Text(departure.line.name)
-                            .font(.largeTitle)
+                            .font(.title3)
                             .lineLimit(1)
                         Spacer()
                     }
@@ -34,19 +41,25 @@ struct DepartureDetail: View {
                     }
                 }
             
-                Section {
-                    if (departure.delay != 0) {
-                        HStack{
-                            Text(formatMinutes(Int(departure.delay), indicatePositive: true, longSpelling: true))
-                                .bold()
-                            Text(departure.delay > 0 ? "zu spät" : "zu früh")
+                if (!(departure.cancelled ?? false)) {
+                    Section {
+                        HStack {
+                            if (departure.delay != 0) {
+                                VStack{
+                                    Text(formatMinutes(Int(departure.delay), indicatePositive: true, longSpelling: true))
+                                        .bold()
+                                    Text(departure.delay > 0 ? "zu spät" : "zu früh")
+                                }
+                            } else {
+                                Text("Pünktlich")
+                                    .bold()
+                            }
+                            Spacer()
+                            DepartureTime(when: departure.when)
                         }
-                    } else {
-                        Text("Pünktlich")
-                            .bold()
-                    }
-                    if (departure.platform != nil) {
-                        Text("Platform \(departure.platform!)")
+                        if (departure.platform != nil) {
+                            Text("Platform \(departure.platform!)")
+                        }
                     }
                 }
             }
