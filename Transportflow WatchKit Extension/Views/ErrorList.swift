@@ -20,6 +20,8 @@ struct ErrorList: View {
                 Text("Keine Haltestellen gefunden")
             } else if error == RequestError.noDeparturesError {
                 Text("Keine Abfahrten verfügbar")
+            } else if error == RequestError.noUpcomingStops {
+                Text("Keine weiteren Haltestellen verfügbar")
             } else {
                 Text("Fehler")
             }

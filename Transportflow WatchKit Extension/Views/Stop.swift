@@ -47,7 +47,7 @@ struct Stop: View {
                 Spacer()
             } else if (monitor != nil) {
                 List(monitor!.stopovers) { departure in
-                    Departure(departure: departure)
+                    Departure(stop: stop, departure: departure)
                 }
             } else {
                 ErrorList(error: error)

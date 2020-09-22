@@ -15,6 +15,7 @@ enum RequestError: Error {
     case noStopsFoundError
     case noStopsNearbyError
     case noDeparturesError
+    case noUpcomingStops
 }
 
 func getProviders(success: @escaping([TransportflowProvider]) -> Void, failure: @escaping(Error) -> Void) -> Void {
@@ -115,6 +116,39 @@ func getDepartures(stop: TransportflowStop, provider: String, success: @escaping
             }
         } catch AFError.responseSerializationFailed {
             failure(.noDeparturesError)
+        } catch {
+            failure(.connectionError)
+        }
+    }
+}
+
+func getUpcomingStops(stop: TransportflowStop, stopover: TransportflowStopover, provider: String, success: @escaping([TransportflowUpcomingStop]) -> Void, failure: @escaping(RequestError) -> Void) -> Void {
+    var components = URLComponents()
+    components.scheme = "https"
+    components.host = "backend.transportflow.online"
+    components.path = "/\(provider)/upcoming/\(stopover.tripId)"
+    components.queryItems = [
+        URLQueryItem(name: "currentstopid", value: stop.id),
+        URLQueryItem(name: "linename", value: stopover.line.name),
+        URLQueryItem(name: "when", value: stopover.rawWhen != nil ? stopover.rawWhen : "0"),
+        URLQueryItem(name: "relativeto", value: stopover.when)
+    ]
+    
+    AF.request(components.url!).responseDecodable(of: [TransportflowUpcomingStop].self) { response in
+        if case .failure(_) = response.result {
+            failure(.connectionError)
+            return
+        }
+        
+        do {
+            let result = try response.result.get()
+            if result.isEmpty {
+                failure(.noUpcomingStops)
+            } else {
+                success(result)
+            }
+        } catch AFError.responseSerializationFailed {
+            failure(.noUpcomingStops)
         } catch {
             failure(.connectionError)
         }

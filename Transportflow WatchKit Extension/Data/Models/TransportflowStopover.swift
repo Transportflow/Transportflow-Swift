@@ -9,6 +9,7 @@ import Foundation
 
 struct TransportflowStopover: Decodable, Identifiable {
     var id: String
+    var tripId: String
     var direction: String
     var line: TransportflowLine
     var cancelled: Bool?
@@ -37,7 +38,7 @@ extension TransportflowStopover {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         //id = id + direction + line.name + when
-        let tripId = try values.decode(String.self, forKey: .id)
+        tripId = try values.decode(String.self, forKey: .id)
         direction  = try values.decode(String.self, forKey: .direction)
         when       = try values.decode(String.self, forKey: .when)
         

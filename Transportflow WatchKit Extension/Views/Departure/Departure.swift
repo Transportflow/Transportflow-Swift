@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Departure: View {
+    var stop: TransportflowStop
     var departure: TransportflowStopover
     @State var detailShown = false
     
@@ -40,7 +41,7 @@ struct Departure: View {
                 }
             }
         }).sheet(isPresented: $detailShown, content: {
-            DepartureDetail(departure: departure)
+            DepartureDetail(stop: stop, departure: departure)
         })
     }
 }

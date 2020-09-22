@@ -21,6 +21,7 @@
 		3A3324C6251795BE0023C866 /* DepartureTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324C5251795BE0023C866 /* DepartureTime.swift */; };
 		3A6A9CB02516760400F95440 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CAF2516760400F95440 /* Monitor.swift */; };
 		3A6A9CB2251692EE00F95440 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CB1251692EE00F95440 /* LocationObserver.swift */; };
+		3A942416251A67B900CED115 /* TransportflowUpcomingStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A942415251A67B900CED115 /* TransportflowUpcomingStop.swift */; };
 		3AB0D4872516175C00B860FA /* TransportflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4862516175C00B860FA /* TransportflowApp.swift */; };
 		3AB0D4892516175C00B860FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4882516175C00B860FA /* ContentView.swift */; };
 		3AB0D48B2516175F00B860FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D48A2516175F00B860FA /* Assets.xcassets */; };
@@ -122,6 +123,7 @@
 		3A3324C5251795BE0023C866 /* DepartureTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureTime.swift; sourceTree = "<group>"; };
 		3A6A9CAF2516760400F95440 /* Monitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
 		3A6A9CB1251692EE00F95440 /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
+		3A942415251A67B900CED115 /* TransportflowUpcomingStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportflowUpcomingStop.swift; sourceTree = "<group>"; };
 		3AB0D4832516175C00B860FA /* Transportflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transportflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB0D4862516175C00B860FA /* TransportflowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportflowApp.swift; sourceTree = "<group>"; };
 		3AB0D4882516175C00B860FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -206,7 +208,16 @@
 		3A2E15BA2517334C00603BC7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3A942417251A67CE00CED115 /* Models */,
 				3A6A9CB1251692EE00F95440 /* LocationObserver.swift */,
+				3A2E15BD2517337600603BC7 /* Networking.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A942417251A67CE00CED115 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				3A3324BB25177DEA0023C866 /* TransportflowMonitor.swift */,
 				3A3324B325174B180023C866 /* TransportflowStop.swift */,
 				3A3324BD25177E430023C866 /* TransportflowStopover.swift */,
@@ -214,9 +225,9 @@
 				3A3324C125177F4D0023C866 /* TransportflowProduct.swift */,
 				3A3324B525174B590023C866 /* TransportflowLocation.swift */,
 				3A2E15BB2517335E00603BC7 /* TransportflowProvider.swift */,
-				3A2E15BD2517337600603BC7 /* Networking.swift */,
+				3A942415251A67B900CED115 /* TransportflowUpcomingStop.swift */,
 			);
-			path = Data;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3AB0D47A2516175C00B860FA = {
@@ -735,6 +746,7 @@
 				3AB0D4C22516176100B860FA /* ComplicationController.swift in Sources */,
 				3A3324C225177F4D0023C866 /* TransportflowProduct.swift in Sources */,
 				3A3324C6251795BE0023C866 /* DepartureTime.swift in Sources */,
+				3A942416251A67B900CED115 /* TransportflowUpcomingStop.swift in Sources */,
 				3ABED0052519027B002FC108 /* DepartureDetail.swift in Sources */,
 				3AB0D4BA2516176100B860FA /* TransportflowApp.swift in Sources */,
 				3AB0D4C02516176100B860FA /* NotificationView.swift in Sources */,
