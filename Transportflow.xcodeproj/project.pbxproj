@@ -10,6 +10,16 @@
 		34FD77B337B2F0D23EDD32F5 /* Pods_Transportflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */; };
 		3A2E15BC2517335E00603BC7 /* TransportflowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E15BB2517335E00603BC7 /* TransportflowProvider.swift */; };
 		3A2E15BE2517337600603BC7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E15BD2517337600603BC7 /* Networking.swift */; };
+		3A2F4A0D253E30BE00F5D0D0 /* TransportflowMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324BB25177DEA0023C866 /* TransportflowMonitor.swift */; };
+		3A2F4A0E253E30BE00F5D0D0 /* TransportflowProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324C125177F4D0023C866 /* TransportflowProduct.swift */; };
+		3A2F4A0F253E30BE00F5D0D0 /* TransportflowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E15BB2517335E00603BC7 /* TransportflowProvider.swift */; };
+		3A2F4A10253E30BF00F5D0D0 /* TransportflowLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324BF25177F000023C866 /* TransportflowLine.swift */; };
+		3A2F4A11253E30BF00F5D0D0 /* TransportflowUpcomingStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A942415251A67B900CED115 /* TransportflowUpcomingStop.swift */; };
+		3A2F4A12253E30BF00F5D0D0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E15BD2517337600603BC7 /* Networking.swift */; };
+		3A2F4A13253E30BF00F5D0D0 /* TransportflowLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324B525174B590023C866 /* TransportflowLocation.swift */; };
+		3A2F4A14253E30BF00F5D0D0 /* TransportflowStopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324BD25177E430023C866 /* TransportflowStopover.swift */; };
+		3A2F4A15253E30BF00F5D0D0 /* TransportflowStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324B325174B180023C866 /* TransportflowStop.swift */; };
+		3A2F4A16253E30BF00F5D0D0 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CB1251692EE00F95440 /* LocationObserver.swift */; };
 		3A3324B425174B180023C866 /* TransportflowStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324B325174B180023C866 /* TransportflowStop.swift */; };
 		3A3324B625174B590023C866 /* TransportflowLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324B525174B590023C866 /* TransportflowLocation.swift */; };
 		3A3324BA251776900023C866 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324B9251776900023C866 /* Stop.swift */; };
@@ -391,6 +401,7 @@
 				3AB0D4802516175C00B860FA /* Frameworks */,
 				3AB0D4812516175C00B860FA /* Resources */,
 				3AB0D4D32516176200B860FA /* Embed Watch Content */,
+				4C89F994D547C13610EBF034 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -429,6 +440,7 @@
 				3AB0D49B2516175F00B860FA /* Sources */,
 				3AB0D49C2516175F00B860FA /* Frameworks */,
 				3AB0D49D2516175F00B860FA /* Resources */,
+				AE91CBB10537963A5476C657 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -594,6 +606,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4C89F994D547C13610EBF034 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transportflow/Pods-Transportflow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transportflow/Pods-Transportflow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transportflow/Pods-Transportflow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5319AF2B374FAC50E57DD536 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,6 +660,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE91CBB10537963A5476C657 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C97AB5FEDCE7459FB0AC061D /* [CP] Check Pods Manifest.lock */ = {
@@ -707,7 +753,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB0D4892516175C00B860FA /* ContentView.swift in Sources */,
+				3A2F4A11253E30BF00F5D0D0 /* TransportflowUpcomingStop.swift in Sources */,
+				3A2F4A0F253E30BE00F5D0D0 /* TransportflowProvider.swift in Sources */,
+				3A2F4A12253E30BF00F5D0D0 /* Networking.swift in Sources */,
+				3A2F4A0D253E30BE00F5D0D0 /* TransportflowMonitor.swift in Sources */,
+				3A2F4A14253E30BF00F5D0D0 /* TransportflowStopover.swift in Sources */,
+				3A2F4A16253E30BF00F5D0D0 /* LocationObserver.swift in Sources */,
+				3A2F4A13253E30BF00F5D0D0 /* TransportflowLocation.swift in Sources */,
+				3A2F4A10253E30BF00F5D0D0 /* TransportflowLine.swift in Sources */,
 				3AB0D4872516175C00B860FA /* TransportflowApp.swift in Sources */,
+				3A2F4A15253E30BF00F5D0D0 /* TransportflowStop.swift in Sources */,
+				3A2F4A0E253E30BE00F5D0D0 /* TransportflowProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

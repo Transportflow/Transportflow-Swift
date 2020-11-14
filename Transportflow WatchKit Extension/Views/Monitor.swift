@@ -50,7 +50,7 @@ struct Monitor: View {
                 
             if loading && error == RequestError.nil && stops.isEmpty {
                 Spacer()
-                Text("Loading")
+                ProgressView()
                 Spacer()
             } else {
                 if !stops.isEmpty {

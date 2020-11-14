@@ -6,6 +6,7 @@ target 'Transportflow' do
   use_frameworks!
 
   # Pods for Transportflow
+  pod 'Alamofire', '~> 5.2'
 
   target 'TransportflowTests' do
     inherit! :search_paths

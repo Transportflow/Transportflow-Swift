@@ -43,7 +43,7 @@ struct Stop: View {
             }
             if error == RequestError.nil && loading {
                 Spacer()
-                Text("Loading")
+                ProgressView()
                 Spacer()
             } else if (monitor != nil) {
                 List(monitor!.stopovers) { departure in
