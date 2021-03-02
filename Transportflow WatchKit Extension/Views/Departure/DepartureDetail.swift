@@ -14,15 +14,15 @@ struct DepartureDetail: View {
     var departure: TransportflowStopover
     @State var upcomingStops: [TransportflowUpcomingStop]?
     @State var upcomingStopError: RequestError?
-    
+
     func loadUpcomingStops() {
         getUpcomingStops(stop: stop, stopover: departure, provider: UserDefaults.standard.string(forKey: "provider") ?? "", success: { upcomingStops in
-            self.upcomingStops = upcomingStops
-        }, failure: { error in
-            self.upcomingStopError = error
-        })
+                self.upcomingStops = upcomingStops
+            }, failure: { error in
+                self.upcomingStopError = error
+            })
     }
-    
+
     var body: some View {
         VStack {
             Form {
@@ -32,31 +32,33 @@ struct DepartureDetail: View {
                             .bold()
                     }
                 }
-                
+
                 VStack {
                     HStack {
-                        WebImage(url: URL(string: departure.line.product.img))
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 26, height: 26, alignment: .center)
+                        #if os(watchOS)
+                            WebImage(url: URL(string: departure.line.product.img))
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 26, height: 26, alignment: .center)
+                        #endif
                         Text(departure.line.name)
-                            .font(.title3)
+                            .font(.largeTitle)
                             .lineLimit(1)
                         Spacer()
                     }
                     HStack {
                         Text(departure.direction)
-                            .font(.subheadline)
+                            .font(.headline)
                             .lineLimit(1)
                         Spacer()
-                    }
+                    }.padding(.bottom, 2.5)
                 }
-            
+
                 if (!(departure.cancelled ?? false)) {
                     Section {
                         HStack {
                             if (departure.delay != 0) {
-                                VStack{
+                                VStack {
                                     Text(formatMinutes(Int(departure.delay), indicatePositive: true, longSpelling: true))
                                         .bold()
                                     Text(departure.delay > 0 ? "zu spät" : "zu früh")
@@ -77,10 +79,8 @@ struct DepartureDetail: View {
                             ForEach(upcomingStops!) { upcomingStop in
                                 HStack {
                                     Text(upcomingStop.stop.name)
-                                        .font(.caption2)
                                     Spacer()
                                     DepartureTime(when: (upcomingStop.departure ?? upcomingStop.arrival)!, relativeCalculationDate: getDateFromString(departure.when), indicatePositive: true)
-                                        .font(.caption2)
                                 }
                             }
                         }
@@ -89,7 +89,7 @@ struct DepartureDetail: View {
             }
         }.onAppear() {
             SDImageCodersManager.shared.addCoder(SDImageSVGCoder.shared)
-            
+
             debugPrint(departure.when)
             loadUpcomingStops()
         }

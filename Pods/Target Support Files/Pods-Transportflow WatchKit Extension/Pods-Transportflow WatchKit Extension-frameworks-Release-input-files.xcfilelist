@@ -1,5 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
-${BUILT_PRODUCTS_DIR}/SDWebImageSVGCoder/SDWebImageSVGCoder.framework
-${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage-watchOS/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSVGCoder-watchOS/SDWebImageSVGCoder.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI-watchOS/SDWebImageSwiftUI.framework

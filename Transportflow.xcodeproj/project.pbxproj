@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34FD77B337B2F0D23EDD32F5 /* Pods_Transportflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */; };
+		0E87A87CD36BBA589F6EDA26 /* Pods_TransportflowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED3C0F6A20851916A76240B /* Pods_TransportflowTests.framework */; };
 		3A2E15BC2517335E00603BC7 /* TransportflowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E15BB2517335E00603BC7 /* TransportflowProvider.swift */; };
 		3A2E15BE2517337600603BC7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E15BD2517337600603BC7 /* Networking.swift */; };
 		3A2F4A0D253E30BE00F5D0D0 /* TransportflowMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324BB25177DEA0023C866 /* TransportflowMonitor.swift */; };
@@ -31,6 +31,13 @@
 		3A3324C6251795BE0023C866 /* DepartureTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324C5251795BE0023C866 /* DepartureTime.swift */; };
 		3A6A9CB02516760400F95440 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CAF2516760400F95440 /* Monitor.swift */; };
 		3A6A9CB2251692EE00F95440 /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CB1251692EE00F95440 /* LocationObserver.swift */; };
+		3A80A11025EE84C8009A92CE /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A9CAF2516760400F95440 /* Monitor.swift */; };
+		3A80A11625EE84E5009A92CE /* DepartureTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324C5251795BE0023C866 /* DepartureTime.swift */; };
+		3A80A11725EE84E5009A92CE /* DepartureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABED0042519027B002FC108 /* DepartureDetail.swift */; };
+		3A80A11825EE84E5009A92CE /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABED0022519026C002FC108 /* Departure.swift */; };
+		3A80A11925EE84E5009A92CE /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324B9251776900023C866 /* Stop.swift */; };
+		3A80A11A25EE84E5009A92CE /* ErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3324C3251794F00023C866 /* ErrorList.swift */; };
+		3A80A14525EE8641009A92CE /* Pods_Transportflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */; };
 		3A942416251A67B900CED115 /* TransportflowUpcomingStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A942415251A67B900CED115 /* TransportflowUpcomingStop.swift */; };
 		3AB0D4872516175C00B860FA /* TransportflowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4862516175C00B860FA /* TransportflowApp.swift */; };
 		3AB0D4892516175C00B860FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0D4882516175C00B860FA /* ContentView.swift */; };
@@ -50,8 +57,11 @@
 		3AB0D4C72516176200B860FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB0D4C62516176200B860FA /* Preview Assets.xcassets */; };
 		3ABED0032519026C002FC108 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABED0022519026C002FC108 /* Departure.swift */; };
 		3ABED0052519027B002FC108 /* DepartureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABED0042519027B002FC108 /* DepartureDetail.swift */; };
+		71E8B7F55300051528890317 /* Pods_Transportflow_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E4D3F212034AB0A3EE32B3 /* Pods_Transportflow_WatchKit_Extension.framework */; };
+		80C854547208B3E726398C59 /* Pods_Transportflow_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A127C9F95A580E9D4C6D6E /* Pods_Transportflow_WatchKit_App.framework */; };
 		8AD501CA02A55F0727FBCD8D /* Pods_Transportflow_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */; };
 		91ECAE7B35E3C9427B2A6BB7 /* Pods_Transportflow_TransportflowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06304C3317712CD64F56035A /* Pods_Transportflow_TransportflowUITests.framework */; };
+		933C6B26DD2DAD5BCC170B3C /* Pods_Transportflow_TransportflowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E588A3A8F59960A7ED82ABF /* Pods_Transportflow_TransportflowUITests.framework */; };
 		BDAA0A9F0C74FDAC7B39572D /* Pods_Transportflow_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26452B4C312E62271D44AE4D /* Pods_Transportflow_WatchKit_Extension.framework */; };
 		C64B97A158A6C211AC102DDB /* Pods_TransportflowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883CCC5AD19E38FA82CCCA16 /* Pods_TransportflowTests.framework */; };
 /* End PBXBuildFile section */
@@ -114,10 +124,9 @@
 
 /* Begin PBXFileReference section */
 		01AE25FBDB430630ED257B6E /* Pods-Transportflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow.release.xcconfig"; path = "Target Support Files/Pods-Transportflow/Pods-Transportflow.release.xcconfig"; sourceTree = "<group>"; };
-		06304C3317712CD64F56035A /* Pods_Transportflow_TransportflowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_TransportflowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4D0B039A19809AC30FF57E /* Pods-Transportflow-TransportflowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow-TransportflowUITests.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D2A423DC71ED732D607290F /* Pods-Transportflow WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit App/Pods-Transportflow WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		26452B4C312E62271D44AE4D /* Pods_Transportflow_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E588A3A8F59960A7ED82ABF /* Pods_Transportflow_TransportflowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_TransportflowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECB3AFE6F276DEE4806FEBA /* Pods-TransportflowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportflowTests.debug.xcconfig"; path = "Target Support Files/Pods-TransportflowTests/Pods-TransportflowTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EF2B7D7DDB1A43702B440C9 /* Pods-Transportflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow/Pods-Transportflow.debug.xcconfig"; sourceTree = "<group>"; };
 		3A2E15BB2517335E00603BC7 /* TransportflowProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportflowProvider.swift; sourceTree = "<group>"; };
@@ -162,12 +171,13 @@
 		3ABED0022519026C002FC108 /* Departure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
 		3ABED0042519027B002FC108 /* DepartureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureDetail.swift; sourceTree = "<group>"; };
 		48138FF56E5393D6E282CCA0 /* Pods-Transportflow WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4ED3C0F6A20851916A76240B /* Pods_TransportflowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportflowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D6CBA228293F9E2428076FA /* Pods-TransportflowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransportflowTests.release.xcconfig"; path = "Target Support Files/Pods-TransportflowTests/Pods-TransportflowTests.release.xcconfig"; sourceTree = "<group>"; };
-		80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		883CCC5AD19E38FA82CCCA16 /* Pods_TransportflowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransportflowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912A15DCB08C666BFE3A37A3 /* Pods-Transportflow WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit App/Pods-Transportflow WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		98690ADC1760C68015B773B0 /* Pods-Transportflow WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Transportflow WatchKit Extension/Pods-Transportflow WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A101EA12CFD17F7403F317 /* Pods-Transportflow-TransportflowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Transportflow-TransportflowUITests.release.xcconfig"; path = "Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7E4D3F212034AB0A3EE32B3 /* Pods_Transportflow_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A127C9F95A580E9D4C6D6E /* Pods_Transportflow_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transportflow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,7 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34FD77B337B2F0D23EDD32F5 /* Pods_Transportflow.framework in Frameworks */,
+				3A80A14525EE8641009A92CE /* Pods_Transportflow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64B97A158A6C211AC102DDB /* Pods_TransportflowTests.framework in Frameworks */,
+				0E87A87CD36BBA589F6EDA26 /* Pods_TransportflowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91ECAE7B35E3C9427B2A6BB7 /* Pods_Transportflow_TransportflowUITests.framework in Frameworks */,
+				933C6B26DD2DAD5BCC170B3C /* Pods_Transportflow_TransportflowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAA0A9F0C74FDAC7B39572D /* Pods_Transportflow_WatchKit_Extension.framework in Frameworks */,
+				71E8B7F55300051528890317 /* Pods_Transportflow_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AD501CA02A55F0727FBCD8D /* Pods_Transportflow_WatchKit_App.framework in Frameworks */,
+				80C854547208B3E726398C59 /* Pods_Transportflow_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,10 +378,10 @@
 			isa = PBXGroup;
 			children = (
 				FDA771E15588AAC4072BFC3F /* Pods_Transportflow.framework */,
-				80D9BA35F37D176D53D143A0 /* Pods_Transportflow_WatchKit_App.framework */,
-				26452B4C312E62271D44AE4D /* Pods_Transportflow_WatchKit_Extension.framework */,
-				06304C3317712CD64F56035A /* Pods_Transportflow_TransportflowUITests.framework */,
-				883CCC5AD19E38FA82CCCA16 /* Pods_TransportflowTests.framework */,
+				F0A127C9F95A580E9D4C6D6E /* Pods_Transportflow_WatchKit_App.framework */,
+				E7E4D3F212034AB0A3EE32B3 /* Pods_Transportflow_WatchKit_Extension.framework */,
+				1E588A3A8F59960A7ED82ABF /* Pods_Transportflow_TransportflowUITests.framework */,
+				4ED3C0F6A20851916A76240B /* Pods_TransportflowTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -753,13 +767,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB0D4892516175C00B860FA /* ContentView.swift in Sources */,
+				3A80A11925EE84E5009A92CE /* Stop.swift in Sources */,
+				3A80A11025EE84C8009A92CE /* Monitor.swift in Sources */,
 				3A2F4A11253E30BF00F5D0D0 /* TransportflowUpcomingStop.swift in Sources */,
+				3A80A11625EE84E5009A92CE /* DepartureTime.swift in Sources */,
 				3A2F4A0F253E30BE00F5D0D0 /* TransportflowProvider.swift in Sources */,
 				3A2F4A12253E30BF00F5D0D0 /* Networking.swift in Sources */,
+				3A80A11825EE84E5009A92CE /* Departure.swift in Sources */,
 				3A2F4A0D253E30BE00F5D0D0 /* TransportflowMonitor.swift in Sources */,
 				3A2F4A14253E30BF00F5D0D0 /* TransportflowStopover.swift in Sources */,
 				3A2F4A16253E30BF00F5D0D0 /* LocationObserver.swift in Sources */,
 				3A2F4A13253E30BF00F5D0D0 /* TransportflowLocation.swift in Sources */,
+				3A80A11A25EE84E5009A92CE /* ErrorList.swift in Sources */,
+				3A80A11725EE84E5009A92CE /* DepartureDetail.swift in Sources */,
 				3A2F4A10253E30BF00F5D0D0 /* TransportflowLine.swift in Sources */,
 				3AB0D4872516175C00B860FA /* TransportflowApp.swift in Sources */,
 				3A2F4A15253E30BF00F5D0D0 /* TransportflowStop.swift in Sources */,
