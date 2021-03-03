@@ -42,9 +42,17 @@ struct Monitor: View {
                 })
         }
     }
-
+    
     var body: some View {
-        Form {
+        #if !os(watchOS)
+        return list.listStyle(InsetGroupedListStyle())
+        #else
+        return list
+        #endif
+    }
+
+    var list: some View {
+        List {
             HStack {
                 TextField("Haltestelle", text: $stopSearch, onCommit: {
                     loadStops(location: locationObserver.location)
@@ -56,7 +64,7 @@ struct Monitor: View {
 
             Section {
                 if !loading && error == RequestError.nil && !stops.isEmpty {
-                    List(stops) { stop in
+                    ForEach(stops) { stop in
                         NavigationLink(stop.name, destination: Stop(provider: provider, stop: stop))
                     }
                 } else if !loading {

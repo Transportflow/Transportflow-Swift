@@ -1,5 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-Transportflow-TransportflowUITests/Pods-Transportflow-TransportflowUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Introspect/Introspect.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage-iOS/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImageSVGCoder-iOS/SDWebImageSVGCoder.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI-iOS/SDWebImageSwiftUI.framework
+${BUILT_PRODUCTS_DIR}/SwiftUIRefresh/SwiftUIRefresh.framework

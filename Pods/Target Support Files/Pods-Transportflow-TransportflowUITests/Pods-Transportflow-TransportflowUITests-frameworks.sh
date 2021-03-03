@@ -176,15 +176,19 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Introspect/Introspect.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-iOS/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageSVGCoder-iOS/SDWebImageSVGCoder.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI-iOS/SDWebImageSwiftUI.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftUIRefresh/SwiftUIRefresh.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Introspect/Introspect.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-iOS/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageSVGCoder-iOS/SDWebImageSVGCoder.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI-iOS/SDWebImageSwiftUI.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftUIRefresh/SwiftUIRefresh.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

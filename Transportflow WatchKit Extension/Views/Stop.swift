@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+#if !os(watchOS)
+    import SwiftUIRefresh
+#endif
 
 struct Stop: View {
     var provider: String
     var stop: TransportflowStop
 
-    @State var loading = false
+    @State private var loading = true
     @State var monitor: TransportflowMonitor? = nil
     @State var error: RequestError = RequestError.nil
 
     func loadDepartures() {
+        print("--- Departure loading")
         loading = true
         getDepartures(stop: stop, provider: provider, success: { monitor in
             self.error = RequestError.nil
@@ -29,7 +33,17 @@ struct Stop: View {
     }
 
     var body: some View {
-        Form {
+        #if !os(watchOS)
+        return list.listStyle(InsetGroupedListStyle()).pullToRefresh(isShowing: $loading) {
+            loadDepartures()
+        }
+        #else
+        return list
+        #endif
+    }
+    
+    var list: some View {
+        List {
             #if os(watchOS)
                 HStack {
                     Text(stop.name)
@@ -43,40 +57,19 @@ struct Stop: View {
                         .padding()
                 }
             #endif
-            if error == RequestError.nil && loading {
-                HStack {
-                    Spacer()
-                    ProgressView()
-                    Spacer()
-                }
-            } else if (monitor != nil) {
-                Section {
-                    List(monitor!.stopovers) { departure in
-                        Departure(stop: stop, departure: departure)
-                    }
+            if (monitor != nil) {
+                ForEach(monitor!.stopovers) { departure in
+                    Departure(stop: stop, departure: departure)
                 }
             } else {
                 ErrorList(error: error)
             }
-        }.onAppear() {
+        }
+        .onAppear() {
             if (monitor == nil) {
                 loadDepartures()
             }
         }.navigationTitle(stop.name)
-            .toolbar {
-            #if !os(watchOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Menu {
-                        Button(action: { loadDepartures() }) {
-                            Text("Refresh") //Label("Refresh", systemImage: "arrow.2.circlepath.circle.fill")
-                        }
-                    }
-                    label: {
-                        Label("Add", systemImage: "plus")
-                    }
-                }
-            #endif
 
-        }
     }
 }

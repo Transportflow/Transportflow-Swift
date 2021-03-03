@@ -33,6 +33,14 @@ struct DepartureDetail: View {
                     }
                 }
 
+                HStack {
+                    #if !os(watchOS)
+                        WebImage(url: URL(string: departure.line.product.img))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50, alignment: .center)
+                            .padding(.trailing, 5)
+                    #endif
                 VStack {
                     HStack {
                         #if os(watchOS)
@@ -52,6 +60,7 @@ struct DepartureDetail: View {
                             .lineLimit(1)
                         Spacer()
                     }.padding(.bottom, 2.5)
+                }
                 }
 
                 if (!(departure.cancelled ?? false)) {

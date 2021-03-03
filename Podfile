@@ -9,6 +9,7 @@ target 'Transportflow' do
   pod 'Alamofire', '~> 5.2'
   pod 'SDWebImageSwiftUI'
   pod 'SDWebImageSVGCoder'
+  pod 'SwiftUIRefresh'
 
   target 'TransportflowTests' do
     inherit! :search_paths

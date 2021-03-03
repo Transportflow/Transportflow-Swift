@@ -43,6 +43,6 @@ struct Departure: View {
         }).sheet(isPresented: $detailShown, content: {
             DepartureDetail(stop: stop, departure: departure)
         })
-        .foregroundColor(.black)
+        .foregroundColor(.primary)
     }
 }

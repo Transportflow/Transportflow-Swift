@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 Section {
                     NavigationLink("🚇 Monitor", destination: Monitor(provider: providerName))
                     Picker(selection: $providerName, label: Text("🗺 Region"), content: {
@@ -24,7 +24,7 @@ struct ContentView: View {
                         UserDefaults.standard.set(newValue, forKey: "provider")
                     }).pickerStyle(DefaultPickerStyle())
                 }
-            }.onAppear(perform: {
+            }.listStyle(InsetGroupedListStyle()).onAppear(perform: {
                 if providers.isEmpty {
                     getProviders(success: { result in
                         providers = result
